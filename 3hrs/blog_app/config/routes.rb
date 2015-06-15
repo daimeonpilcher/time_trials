@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: 'sites#index'
 
-  get 'articles/index'
+  #get 'articles/index'
 
   get 'articles/new'
 
@@ -15,19 +15,20 @@ Rails.application.routes.draw do
 
   delete 'articles/destroy'
 
-  get 'users/index'
+  resource :users
+  #get 'users/index'
 
-  get 'users/new'
+  # get 'users/new'
 
-  post 'users/create'
+  # post 'users/create'
 
-  get 'users/show'
+  # get 'users/show'
 
-  get 'users/edit'
+  # get 'users/edit'
 
-  put 'users/update'
+  # put 'users/update'
 
-  delete 'users/destroy'
+  # delete 'users/destroy'
 
   get 'sites/about'
 
